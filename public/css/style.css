@@ -1,7 +1,7 @@
 
 *{
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat',  sans-serif;
     margin: 0;
     padding: 0;
   
@@ -9,7 +9,7 @@
   
   
   html,body{
-      background-color: rgb(14, 5, 99);
+      background-color: hsl(0, 0%, 13%);
       background-repeat: no-repeat;
       /*permite deslizar cuando hago clicks en los links del nav */
      scroll-behavior: smooth;
@@ -91,7 +91,7 @@
  
  
  h1{
-     color:hsl(240, 17%, 2%);
+     color:hwb(240 84% 10%);
      font-size: 3em;
  }
 
@@ -127,9 +127,15 @@ color: #fff;
 
 .main img{
     width: 300px;
-    border:7px  solid  hwb(330 16% 83%);;
-   height: 400px;
-
+    border:7px  solid  rgb(37, 37, 37);;
+   height: 500px;
+     flex: 1;
+    padding: 20px;
+    text-align: center;
+     width: 100%;
+    border-radius: 60%;
+    max-width: 400px;
+     animation-duration: 3s;
 }
 
 
@@ -138,7 +144,7 @@ color: #fff;
 }
 
 span{
-    color: rgb(205, 195, 223);
+    color: hsl(330, 58%, 27%);
 }
 
 

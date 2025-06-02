@@ -33,7 +33,7 @@ $(document).ready(function(){
 
   document.addEventListener('DOMContentLoaded', function () {
     // Array con tus profesiones
-    var profesiones = ['Bibiana Caicedo','Analista', 'Diseñadora multimedia', 'Desarrolladora web','Desarrolladora de sofware'];
+    var profesiones = ['Bibiana Caicedo','Analista', 'Developer', 'Fronted', 'Fullstack', 'Engineering'];
 
     // Función para cambiar dinámicamente el nombre y la profesión
     function cambiarNombreYProfesion() {
