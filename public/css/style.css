@@ -293,15 +293,36 @@ p {
 
 }
 
-/* Contenedor principal que incluye el formulario y el mapa */
+
 .contact-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espacio entre el formulario y el mapa */
+    gap: 20px; 
     background-color: #000;
 }
 
-/* Estilo para el formulario */
+
+#tecnologia {
+  color: #4f46e5;
+  font-weight: 600;
+  display: inline-block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
 .form-container {
     flex: 2; /* Ajusta el valor para aumentar el ancho del formulario en comparación con el mapa */
     min-width: 700px; /* Ajusta el ancho mínimo según sea necesario */
@@ -314,6 +335,9 @@ p {
     min-width: 320px; 
     background-color: #000;
 }
+
+
+
 
 /* Estilos para el formulario de contacto */
 form {

@@ -1,10 +1,9 @@
-// Agrega este script al final del documento HTML antes de </body>
-    // Función para ajustar el tamaño de los elementos en la sección de portafolio
+
     function adjustPortfolioItems() {
         const portfolioItems = document.querySelectorAll('.portfolio-item');
         portfolioItems.forEach(item => {
             const itemWidth = item.clientWidth;
-            item.style.height = itemWidth + 'px'; // Haz que la altura sea igual al ancho para crear cuadros
+            item.style.height = itemWidth + 'px'; // Hace que la altura sea igual al ancho para crear cuadros
         });
     }
 
@@ -32,21 +31,21 @@ $(document).ready(function(){
 //Profesiones automaticamente
 
   document.addEventListener('DOMContentLoaded', function () {
-    // Array con tus profesiones
-    var profesiones = ['Bibiana Caicedo','Analista', 'Developer', 'Fronted', 'Fullstack', 'Engineering'];
+    // Array  profesiones
+    let profesiones = ['Bibiana Caicedo','Anaista', 'Developer', 'Engineering'];
 
-    // Función para cambiar dinámicamente el nombre y la profesión
+   
     function cambiarNombreYProfesion() {
         var nombreElemento = document.getElementById('nombre');
         var profesionElemento = document.getElementById('profesion');
 
-        // Cambiar la profesión
-        var profesionActual = profesionElemento.textContent;
-        var nuevaProfesion = profesiones[(profesiones.indexOf(profesionActual) + 1) % profesiones.length];
+        // Cambia la profesión
+        let profesionActual = profesionElemento.textContent;
+        let nuevaProfesion = profesiones[(profesiones.indexOf(profesionActual) + 1) % profesiones.length];
         profesionElemento.textContent = nuevaProfesion;
     }
 
-    // Cambiar dinámicamente cada 2 segundos
+    // Cambia dinámicamente cada 2 segundos
     setInterval(cambiarNombreYProfesion, 3000);
 
     // Ejecutar la función una vez después de cargar la página
@@ -126,4 +125,34 @@ skillInputs.forEach(input => {
             }, 100); // Se muestra después de 100ms
         }
     });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+  // Array de tecnologías
+  const tecnologias = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'PHP',
+    'SQL',
+    'Node.js'
+  ];
+
+  const tecnologiaElemento = document.getElementById('tecnologia');
+  let index = 0;
+
+  function cambiarTecnologia() {
+    tecnologiaElemento.textContent = tecnologias[index];
+    index = (index + 1) % tecnologias.length;
+  }
+
+  // Cambia cada 2 segundos
+  setInterval(cambiarTecnologia, 2000);
+
+  // Ejecutar al cargar
+  cambiarTecnologia();
+});
+
+
 
